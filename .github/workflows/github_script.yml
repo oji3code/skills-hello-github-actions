@@ -16,8 +16,8 @@ jobs:
               repo: context.repo.repo,
               body: "🎉 You've created issue comment using GitHub Script!!!"
             });
-            github.projects.createCard({
+            /*github.projects.createCard({
               column_id: {{columnID}},
               content_id: context.payload.issue.id,
               content_type: "Issue"
-            });
+            });*/
