@@ -1,7 +1,16 @@
 
+# ワークフロー名称
 name: Post welcome comment
+# イベント登録
 on:
+  # プルリクエストをオープンにするときにワークフローが実行される
   pull_request:
     types: [opened]
+# リポジトリをそうするためにワークフローに権限を割り当てる
 permissions:
+  # プルリクエストへ書き込む
   pull-requests: write
+jobs:
+  build:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
